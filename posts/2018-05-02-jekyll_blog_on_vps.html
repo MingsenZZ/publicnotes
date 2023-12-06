@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:url" content="https://newzone.top/posts/2018-05-02-jekyll_blog_on_vps.html"><meta property="og:site_name" content="LearnData-开源笔记"><meta property="og:title" content="Jekyll 扩展篇：服务器搭建 Jekyll 博客"><meta property="og:description" content="Github 墙得太厉害，就想在服务器上自建 Jekyll 环境，用上 Travis CI 和 Docker 后才发现完全没必要。。 Jekyll 环境官方安装指南： 使用 RVM 安装 Ruby (rvm -&gt; ruby -&gt; gem 网上大量教程就不赘述了) 安装 jekyll：gem install jekyll。 进入 jekyll 网站，执行命令行 jekyll build，生成 Jekyll 静态网页。 网站的执行目录需要指定在 _site，这是 Jekyll 生成的静态页面目录。之后每次更新博客，都需要进入服务器执行一次 jekyll build，重新生成静态页面。"><meta property="og:type" content="article"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2023-12-06T14:17:09.000Z"><meta property="article:author" content="清顺"><meta property="article:tag" content="Jekyll"><meta property="article:tag" content="建站"><meta property="article:published_time" content="2018-05-02T00:00:00.000Z"><meta property="article:modified_time" content="2023-12-06T14:17:09.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Jekyll 扩展篇：服务器搭建 Jekyll 博客","image":[""],"datePublished":"2018-05-02T00:00:00.000Z","dateModified":"2023-12-06T14:17:09.000Z","author":[{"@type":"Person","name":"清顺","url":"https://newzone.top"}]}</script><link rel="alternate" type="application/rss+xml" href="https://newzone.top/rss.xml" title="LearnData-开源笔记 RSS Feed"><title>Jekyll 扩展篇：服务器搭建 Jekyll 博客 | LearnData-开源笔记</title><meta name="description" content="Github 墙得太厉害，就想在服务器上自建 Jekyll 环境，用上 Travis CI 和 Docker 后才发现完全没必要。。 Jekyll 环境官方安装指南： 使用 RVM 安装 Ruby (rvm -&gt; ruby -&gt; gem 网上大量教程就不赘述了) 安装 jekyll：gem install jekyll。 进入 jekyll 网站，执行命令行 jekyll build，生成 Jekyll 静态网页。 网站的执行目录需要指定在 _site，这是 Jekyll 生成的静态页面目录。之后每次更新博客，都需要进入服务器执行一次 jekyll build，重新生成静态页面。">
+    <meta name="keywords" content="自我提升,效率提升,开源工具,学习笔记" />
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #252232;
+      }
+
+      html,
+      body {
+        background: var(--bg-color);
+      }
+      .wwads-cn * {
+        color: var(--text-color) !important;
+      }
+      @media screen and (max-width: 1300px) {
+        .wwads-cn {
+          display: none;
+        }
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="preload" href="/assets/style-Td_WFUTw.css" as="style"><link rel="stylesheet" href="/assets/style-Td_WFUTw.css">
+    <!--vuepress-ssr-resources-->
+    <!-- <script type="text/javascript" charset="UTF-8" src="https://cdn.wwads.cn/js/makemoney.js" async></script> -->
+	  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7585955822109216"
+     crossorigin="anonymous"></script> -->
+    <!-- Matomo 此区块为统计代码，请删除-->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://piwik.seoipo.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '7']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code 此区块为统计代码，请删除-->
+  </head>
+  <body>
+    <!-- <div class="wwads-cn wwads-vertical wwads-sticky" data-id="255" data-sticky-position="left" style="max-width:180px; background-color:var(--bg-color);"></div> -->
+    <div id="app"><!--vuepress-ssr-app--></div>
+    <script type="module" src="/assets/app-WqupPmHg.js" defer></script>
+    <!-- 看板娘区块 -->
+    <script src="/live2d-widget/autoload.js"></script>
+    <!-- End 看板娘区块 -->
+    <script src="https://oss.newzone.top/instantpage.min.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:url" content="https://newzone.top/web/VuePress.html"><meta property="og:site_name" content="LearnData-开源笔记"><meta property="og:title" content="VuePress"><meta property="og:description" content="VuePress 是一个以 Markdown 为中心的静态网站生成器。你可以使用 Markdown 来书写内容（如文档、博客等），然后 VuePress 会帮助你生成一个静态网站来展示它们。如果你已经有了 docsify/Hexo 等 Markdown 架构网站，简单就能切换到 VuePress。 不过，VuePress 网站需要依赖包环境，生成的静态文件在本地运行会缺少组件，需要服务器或其他云服务上运行。如果本地部署中出现未知 bug，推荐使用 StackBlitz 在线 IDE 工具测试，打开 https://stackblitz.com/github/用户名/仓库名 即可将对应 GitHub 仓库导入 StackBlitz。开发时，建议用 dev 命令测试，这样可以查看打包前的动态代码，发现组件间的内部链接。"><meta property="og:type" content="website"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2023-12-06T14:17:09.000Z"><meta property="article:author" content="清顺"><meta property="article:modified_time" content="2023-12-06T14:17:09.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"VuePress","description":"VuePress 是一个以 Markdown 为中心的静态网站生成器。你可以使用 Markdown 来书写内容（如文档、博客等），然后 VuePress 会帮助你生成一个静态网站来展示它们。如果你已经有了 docsify/Hexo 等 Markdown 架构网站，简单就能切换到 VuePress。 不过，VuePress 网站需要依赖包环境，生成的静态文件在本地运行会缺少组件，需要服务器或其他云服务上运行。如果本地部署中出现未知 bug，推荐使用 StackBlitz 在线 IDE 工具测试，打开 https://stackblitz.com/github/用户名/仓库名 即可将对应 GitHub 仓库导入 StackBlitz。开发时，建议用 dev 命令测试，这样可以查看打包前的动态代码，发现组件间的内部链接。"}</script><link rel="alternate" type="application/rss+xml" href="https://newzone.top/rss.xml" title="LearnData-开源笔记 RSS Feed"><title>VuePress | LearnData-开源笔记</title><meta name="description" content="VuePress 是一个以 Markdown 为中心的静态网站生成器。你可以使用 Markdown 来书写内容（如文档、博客等），然后 VuePress 会帮助你生成一个静态网站来展示它们。如果你已经有了 docsify/Hexo 等 Markdown 架构网站，简单就能切换到 VuePress。 不过，VuePress 网站需要依赖包环境，生成的静态文件在本地运行会缺少组件，需要服务器或其他云服务上运行。如果本地部署中出现未知 bug，推荐使用 StackBlitz 在线 IDE 工具测试，打开 https://stackblitz.com/github/用户名/仓库名 即可将对应 GitHub 仓库导入 StackBlitz。开发时，建议用 dev 命令测试，这样可以查看打包前的动态代码，发现组件间的内部链接。">
+    <meta name="keywords" content="自我提升,效率提升,开源工具,学习笔记" />
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #252232;
+      }
+
+      html,
+      body {
+        background: var(--bg-color);
+      }
+      .wwads-cn * {
+        color: var(--text-color) !important;
+      }
+      @media screen and (max-width: 1300px) {
+        .wwads-cn {
+          display: none;
+        }
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="preload" href="/assets/style-Td_WFUTw.css" as="style"><link rel="stylesheet" href="/assets/style-Td_WFUTw.css">
+    <!--vuepress-ssr-resources-->
+    <!-- <script type="text/javascript" charset="UTF-8" src="https://cdn.wwads.cn/js/makemoney.js" async></script> -->
+	  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7585955822109216"
+     crossorigin="anonymous"></script> -->
+    <!-- Matomo 此区块为统计代码，请删除-->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://piwik.seoipo.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '7']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code 此区块为统计代码，请删除-->
+  </head>
+  <body>
+    <!-- <div class="wwads-cn wwads-vertical wwads-sticky" data-id="255" data-sticky-position="left" style="max-width:180px; background-color:var(--bg-color);"></div> -->
+    <div id="app"><!--vuepress-ssr-app--></div>
+    <script type="module" src="/assets/app-WqupPmHg.js" defer></script>
+    <!-- 看板娘区块 -->
+    <script src="/live2d-widget/autoload.js"></script>
+    <!-- End 看板娘区块 -->
+    <script src="https://oss.newzone.top/instantpage.min.js" type="module"></script>
+  </body>
+</html>

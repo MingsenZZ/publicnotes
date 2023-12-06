@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:url" content="https://newzone.top/posts/2017-09-02-forced_shutdown.html"><meta property="og:site_name" content="LearnData-开源笔记"><meta property="og:title" content="电脑关机了，第二天一看确又开着的？让系统正常关机！"><meta property="og:description" content="晚上明明按下电脑的关机键，第二天早上却发现电脑开了一晚上？这是因为后台和 GUI 应用程序在阻止或取消关机，使得系统无法正常关机。为解决此问题，可以按照以下方法授予系统自动关机权限。 手工操作 点击「开始菜单」，搜索「Regedit」，进入注册表编辑器。 打开窗口后，向注册表上方菜单输入路径 计算机\HKEY_CURRENT_USER\Control Panel\Desktop。 在右侧窗格中找到 AutoEndTasks 键值。若不存在，则新建一个名为 AutoEndTasks 的「字符串值」，并将键值的数值设为 1。AutoEndTasks 表示自动结束失去响应的程序任务。0 表示 false（默认值），而 1 表示 true，电脑会自动结束失去响应的程序。 查找或创建 WaitToKillAppTimeout 字符串值，并设定其数值为 2000。2000 以毫秒计，表示在程序失去响应后，系统将等待 2 秒后自动结束相应程序。"><meta property="og:type" content="article"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2023-12-06T14:17:09.000Z"><meta property="article:author" content="清顺"><meta property="article:tag" content="关机"><meta property="article:published_time" content="2017-09-02T00:38:00.000Z"><meta property="article:modified_time" content="2023-12-06T14:17:09.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"电脑关机了，第二天一看确又开着的？让系统正常关机！","image":[""],"datePublished":"2017-09-02T00:38:00.000Z","dateModified":"2023-12-06T14:17:09.000Z","author":[{"@type":"Person","name":"清顺","url":"https://newzone.top"}]}</script><link rel="alternate" type="application/rss+xml" href="https://newzone.top/rss.xml" title="LearnData-开源笔记 RSS Feed"><title>电脑关机了，第二天一看确又开着的？让系统正常关机！ | LearnData-开源笔记</title><meta name="description" content="晚上明明按下电脑的关机键，第二天早上却发现电脑开了一晚上？这是因为后台和 GUI 应用程序在阻止或取消关机，使得系统无法正常关机。为解决此问题，可以按照以下方法授予系统自动关机权限。 手工操作 点击「开始菜单」，搜索「Regedit」，进入注册表编辑器。 打开窗口后，向注册表上方菜单输入路径 计算机\HKEY_CURRENT_USER\Control Panel\Desktop。 在右侧窗格中找到 AutoEndTasks 键值。若不存在，则新建一个名为 AutoEndTasks 的「字符串值」，并将键值的数值设为 1。AutoEndTasks 表示自动结束失去响应的程序任务。0 表示 false（默认值），而 1 表示 true，电脑会自动结束失去响应的程序。 查找或创建 WaitToKillAppTimeout 字符串值，并设定其数值为 2000。2000 以毫秒计，表示在程序失去响应后，系统将等待 2 秒后自动结束相应程序。">
+    <meta name="keywords" content="自我提升,效率提升,开源工具,学习笔记" />
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #252232;
+      }
+
+      html,
+      body {
+        background: var(--bg-color);
+      }
+      .wwads-cn * {
+        color: var(--text-color) !important;
+      }
+      @media screen and (max-width: 1300px) {
+        .wwads-cn {
+          display: none;
+        }
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="preload" href="/assets/style-Td_WFUTw.css" as="style"><link rel="stylesheet" href="/assets/style-Td_WFUTw.css">
+    <!--vuepress-ssr-resources-->
+    <!-- <script type="text/javascript" charset="UTF-8" src="https://cdn.wwads.cn/js/makemoney.js" async></script> -->
+	  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7585955822109216"
+     crossorigin="anonymous"></script> -->
+    <!-- Matomo 此区块为统计代码，请删除-->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://piwik.seoipo.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '7']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code 此区块为统计代码，请删除-->
+  </head>
+  <body>
+    <!-- <div class="wwads-cn wwads-vertical wwads-sticky" data-id="255" data-sticky-position="left" style="max-width:180px; background-color:var(--bg-color);"></div> -->
+    <div id="app"><!--vuepress-ssr-app--></div>
+    <script type="module" src="/assets/app-WqupPmHg.js" defer></script>
+    <!-- 看板娘区块 -->
+    <script src="/live2d-widget/autoload.js"></script>
+    <!-- End 看板娘区块 -->
+    <script src="https://oss.newzone.top/instantpage.min.js" type="module"></script>
+  </body>
+</html>
